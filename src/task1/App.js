@@ -1,12 +1,12 @@
-import logo from '../logo.svg';
 import './App.css';
-import ImageCarousel from "./ImageCarousel";
+import { ImageCarousel } from './components/imageCarousel';
 
 function App() {
   return (
-      <div>
-        <ImageCarousel />
-      </div>
+    <div className="App">
+      <h1>Juno Journey's Image Carousel</h1>
+      <ImageCarousel />
+    </div>
   );
 }
 

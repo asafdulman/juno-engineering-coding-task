@@ -1,9 +1,11 @@
 import { render } from '@testing-library/react';
-import App from "./App";
+import { ImageCarousel } from './task1/imageCarousel';
 
-test("Testing works!", () => {
-  const { getByText } = render(<App />);
-  // eslint-disable-next-line testing-library/prefer-screen-queries
-  expect(getByText(/Your code/i)).toBeInTheDocument();
-});
+/* eslint-disable */
 
+describe('Image Carousel Component', () => {
+  it('should render empty state when there are no images to display', () => {
+    const { getByTestId } = render(<ImageCarousel />);
+    expect(getByTestId('empty-state-box')).toBeInTheDocument
+  });
+})
